@@ -12,43 +12,86 @@
 <div class="top-section">
   <div class="container">
     <div class="nav">
-      <span class="logo"><img src="./images/logo_vector.png" alt="logo"></span>
-      <span><span><a href="#" class="active stays"><span>Stays</span><hr></a>
-        <a href="#" class="attractions"><span>Sttractions</span></a></span>
-    <span><a href="#" class="navimg"><img src="images/night.png" alt="nigh"></a>
-    <a href="#" class="navimg2"><img src="images/accountcircle.png" alt=""></a>
-    </span></span></div>
+      <div class="logo">
+        <a href="#">
+          <img src="./images/logo_vector.png" alt="logo">
+        </a>
+      </div>
+      <div>
+        <div class="menu">
+          <a href="#" class="active stays">
+            <span>Stays</span>
+            <hr>
+          </a>
+        <a href="#" class="attractions">
+          <span>Sttractions</span>
+          <hr>
+        </a>
+        <a href="#" class="navimg">
+        <span>
+          <img src="images/night.png" alt="night">
+        </span>
+      </a>
+    <a href="#" class="navimg2">
+      <span>
+        <img src="images/accountcircle.png" alt="accoun">
+      </span>
+    </a>
+    </div>
+      </div>
+    </div>
     <div class="page">
-      <h2 class="page-title">Discover stay
+      <h2 class="page-title">Discover stays
         <br>to live, work or just relax</h2>
-      <p class="description"></p>
+      <div class="header_subtitle">
+        <div class="header_subtitle_hotel">Your destination or hotel name</div>
+        <div class="header_subtitle_check">Check-in — Check-out</div>
+      </div>
+      <form action="/" method="get">
+        <label for="city"></label>
+      <input id="city" class="input_city" type="text" placeholder="New York">
+        <label for="data"></label>
+        <input id="data" class="input_data" type="text" placeholder="Tue 15 Sept — Sat 19 Sept">
+        <label for="room"></label>
+        <input id="room" class="input_room" type="text" placeholder="2 Adults — 0 Children — 1 Room">
+        <button type="submit">Search</button>
+      </form>
+
+      <div class="apps">
+        <a href="#" class="android">
+          <img src="./images/google.png" alt="google">
+        </a>
+        <a href="#" class="ios">
+          <img src="./images/app.png" alt="ios">
+        </a>
+      </div>
     </div>
   </div>
-
+</div>
   <div class="offers">
     <div class="container">
       <h2 class="text-center">What do we offer</h2>
       <hr class="title-line">
       <div class="row">
-        <div class="item-4 text-center">
+        <div class="col-4 text-center">
           <div class="icon-wrap">
             <img src="./images/headphones.png" alt="Support 24/7">
           </div>
           <span class="offer-title">Support 24/7</span>
         </div>
-        <div class="item-4 text-center">
+        <div class="col-4 text-center">
           <div class="icon-wrap">
             <img src="./images/question.png" alt="Communicate directly">
           </div>
           <span class="offer-title">Communicate directly</span>
         </div>
-        <div class="item-4 text-center">
+        <div class="col-4 text-center">
           <div class="icon-wrap">
             <img src="./images/computer.png" alt="Book online">
           </div>
           <span class="offer-title">Book online</span>
         </div>
-        <div class="item-4 text-center">
+        <div class="col-4 text-center">
           <div class="icon-wrap">
             <img src="./images/hand.png" alt="Real guest reviews">
           </div>
@@ -60,7 +103,7 @@
   <div class="footer">
     <div class="container">
       <div class="row">
-        <div class="item-3">
+        <div class="col-3">
           <ul>
             <li>
               <a href="#" class="footer_up">About</a>
@@ -78,7 +121,7 @@
             </li>
           </ul>
         </div>
-        <div class="item-3">
+        <div class="col-3">
           <ul>
             <li>
               <a href="#" class="footer_up">Property types</a>
@@ -103,7 +146,7 @@
             </li>
           </ul>
         </div>
-        <div class="item-3">
+        <div class="col-3">
           <ul>
             <li>
               <a class="footer_up">Support</a>
@@ -120,6 +163,6 @@
       <div class="copyright">&copy; 2020 Triphouse, Inc. All rights reserved</div>
     </div>
   </div>
-</div>
+
 </body>
 </html>
