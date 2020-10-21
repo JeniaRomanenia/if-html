@@ -101,7 +101,6 @@ li {
 
 .top-section {
   height: 900px;
-
   background-color: #1D1E1F;
   background-image: url(../images/castelmezzano.png);
   background-repeat: no-repeat;
@@ -194,7 +193,7 @@ a.active hr {
 .input_data {
   width: 258px;
   height: 64px;
-  border-radius:8px;
+  border-radius: 8px;
   border-color: #F5BD41;
   border-width: 3px;
   border-style: solid;
@@ -231,31 +230,32 @@ input, textarea {
   line-height: 21px;
   color: #383838;
 }
- form {
-   margin-bottom: 120px;
-   display: flex;
-   flex-wrap: wrap;
- }
 
- .apps {
-   text-align: center;
- }
+form {
+  margin-bottom: 120px;
+  display: flex;
+  flex-wrap: wrap;
+}
 
- .header_subtitle {
-   display: flex;
-   font-size: 18px;
-   line-height: 21px;
-   color: #FFFFFF;
- }
+.apps {
+  text-align: center;
+}
 
- .header_subtitle_hotel {
-   margin: 103px 221px 25px 28px;;
- }
+.header_subtitle {
+  display: flex;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
 
- .header_subtitle_check {
-   margin-bottom: 25px;
-   margin-top: 103px;
- }
+.header_subtitle_hotel {
+  margin: 103px 221px 25px 28px;;
+}
+
+.header_subtitle_check {
+  margin-bottom: 25px;
+  margin-top: 103px;
+}
 
 .top-section .container {
   padding-top: 51px;
