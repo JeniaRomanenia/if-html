@@ -240,7 +240,7 @@ form {
   height: 64px;
   background: #FFFFFF;
   border-radius: 8px;
-  border-color: #f3f3f4;
+  border: #f3f3f4;
   border-style: solid;
   border-width: 3px;
 }
