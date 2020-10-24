@@ -7,96 +7,16 @@
   font-family: 'Roboto', sans-serif;
 }
 
-h2 {
-  margin-bottom: 20px;
-  font-size: 40px;
-  line-height: 47px;
-  font-weight: 500;
-}
-
 .container {
   max-width: 1232px;
   margin: 0 auto;
 }
 
-.row {
-  display: flex;
-}
-
-.col-4 {
-  width: 25%;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.title-line {
-  border: none;
-  width: 100px;
-  height: 4px;
-  background-color: #F5BD41;
-  margin: 0 auto 80px;
-}
-
-.icon-wrap {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100px;
-  margin-bottom: 48px;
-}
-
-.offer-title {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 400;
-}
-
-.offers .container {
-  padding: 118px 0;
-}
-
-.footer .container {
-  padding: 106px 0;
-}
-
-.footer {
-  background-color: #10367C;
-}
-
-.footer_up {
-  font-size: 20px;
-  line-height: 47px;
-  font-weight: 500;
-  color: #FFFFFF;
-}
-
-.footer_text {
-  font-size: 20px;
-  line-height: 47px;
-  font-weight: 400;
-  color: #FFFFFF;
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
-.copyright {
-  font-size: 14px;
-  font-weight: 400;
-  color: #FFFFFF;
-}
-
-.footer .col-3 {
-  margin-bottom: 60px;
-  width: calc(100% / 3);
+.sprite {
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
 }
 
 .top-section {
@@ -108,6 +28,12 @@ li {
   background-size: auto;
 }
 
+.top-section .container {
+  padding-top: 51px;
+  height: 900px;
+}
+
+
 .nav {
   height: 46px;
   width: 1234px;
@@ -115,10 +41,60 @@ li {
   justify-content: space-between;
 }
 
+.icon-logo {
+  fill: #3077C6;
+  height: 40px;
+  width: 205px;
+}
+
+.menu {
+  display: flex;
+  width: 343px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menu-1 {
+  display: flex;
+  width: 201px;
+  justify-content: space-between;
+}
+
+.menu-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 94px;
+}
+
+.navimg {
+  justify-content: center;
+}
+
+.stays {
+  padding: 6px 0 12px;
+}
+
+.attractions {
+  padding: 6px 0 12px;
+}
+
+.icon-night {
+  fill: #FFFFFF;
+  height: 30px;
+  width: 30px;
+}
+
+.icon-account {
+  fill: #FFFFFF;
+  height: 40px;
+  width: 40px;
+}
+
 a {
   display: inline-flex;
   align-items: center;
   flex-direction: column;
+  text-decoration: none;
 }
 
 a span {
@@ -142,6 +118,13 @@ a.active hr {
   display: inline-block;
 }
 
+h2 {
+  margin-bottom: 20px;
+  font-size: 40px;
+  line-height: 47px;
+  font-weight: 500;
+}
+
 .page {
   height: 487px;
   display: flex;
@@ -151,103 +134,9 @@ a.active hr {
 
 .page-title {
   font-size: 50px;
-  font-weight: 500;
   line-height: 59px;
   color: #FFFFFF;
   margin: 0;
-}
-
-.menu {
-  margin-left: 24px;
-}
-
-.navimg {
-  margin-left: 24px;
-  padding: 5px 0 11px;
-}
-
-.navimg2 {
-  margin-left: 24px;
-  padding-bottom: 6px;
-}
-
-.stays {
-  margin-right: 24px;
-  padding: 6px 0 12px;
-}
-
-.attractions {
-  margin-right: 24px;
-  padding: 6px 0 12px;
-}
-
-.input_city {
-  width: 463px;
-  padding: 19px 355px 18px 21px;
-  border: none;
-  background: transparent;
-}
-
-.input_data {
-  width: 258px;
-  height: 64px;
-  border-radius: 8px;
-  border-color: #F5BD41;
-  border-width: 3px;
-  border-style: solid;
-  text-align: center;
-  background: transparent;
-}
-
-.input_room {
-  width: 314px;
-  height: 64px;
-  text-align: center;
-  border: none;
-  background: transparent;
-}
-
-button {
-  width: 192px;
-  height: 64px;
-  background: #3077C6;
-  color: #FFFFFF;
-  font-size: 24px;
-  font-weight: 500;
-  text-align: center;
-  border-radius: 8px;
-  border-width: 3px;
-  border-color: #3077C6;
-  border-style: solid;
-
-}
-
-input, textarea {
-  font-size: 18px;
-  line-height: 21px;
-  color: #383838;
-}
-
-form {
-  display: flex;
-  flex-wrap: nowrap;
-  background: transparent;
-  border: none;
-}
-
-.form {
-  width: 1232px;
-  height: 64px;
-  background: #FFFFFF;
-  border-radius: 8px;
-  border: #f3f3f4;
-  border-style: solid;
-  border-width: 3px;
-}
-
-.apps {
-  text-align: center;
-  margin-top: 117px;
 }
 
 .header_subtitle {
@@ -266,11 +155,197 @@ form {
   margin-top: 102px;
 }
 
-.top-section .container {
-  padding-top: 51px;
-  height: 900px;
+form {
+  display: flex;
+  flex-wrap: nowrap;
+  background: transparent;
+  border: none;
+}
+
+.form {
+  width: 1232px;
+  height: 64px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  border: #f3f3f4;
+  border-style: solid;
+  border: 3px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.input_city {
+  width: 463px;
+  height: 64px;
+  padding-left: 24px;
+  border: none;
+  background: transparent;
+}
+
+.input_data {
+  width: 258px;
+  border-radius: 8px;
+  border-color: #F5BD41;
+  border-width: 3px;
+  border-style: solid;
+  text-align: center;
+  background: transparent;
+}
+
+.input_room {
+  width: 314px;
+  text-align: center;
+  border: none;
+  background: transparent;
+}
+
+input, textarea {
+  font-size: 18px;
+  line-height: 21px;
+  color: #383838;
+}
+
+button {
+  width: 192px;
+  background: #3077C6;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 8px;
+  border-width: 3px;
+  border-color: #3077C6;
+  border-style: solid;
+
+}
+
+.apps {
+  text-align: center;
+  margin-top: 117px;
 }
 
 .android {
   padding-right: 12px;
 }
+
+.icon-android {
+  height: 40px;
+  width: 135px;
+}
+
+.icon-iso {
+  height: 40px;
+  width: 120px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.offers .container {
+  padding: 118px 0;
+}
+
+.offer-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.title-line {
+  border: none;
+  width: 100px;
+  height: 4px;
+  background-color: #F5BD41;
+  margin: 0 auto 80px;
+}
+
+.row {
+  display: flex;
+}
+
+.col-4 {
+  width: 25%;
+}
+
+.icon-wrap {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 48px;
+  fill: #3077C6;
+}
+
+.footer .container {
+  padding: 110px 0;
+}
+
+.footer {
+  background-color: #10367C;
+}
+
+.footer_up {
+  font-size: 20px;
+  line-height: 47px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.footer_text {
+  font-size: 20px;
+  line-height: 47px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+li {
+  list-style: none;
+}
+
+.copyright {
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.footer .col-3 {
+  margin-bottom: 60px;
+  width: calc(100% / 3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
