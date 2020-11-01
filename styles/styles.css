@@ -262,6 +262,8 @@ button {
 
 .row {
   display: flex;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 .col-4 {
@@ -272,7 +274,7 @@ button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100px;
   height: 100px;
   margin-bottom: 48px;
   fill: #3077C6;
@@ -286,6 +288,24 @@ button {
   background-color: #10367C;
 }
 
+.logo_in_footer {
+  width: 98px;
+  height: 19px;
+  fill: #FFFFFF;
+}
+
+.logo_footer {
+  margin-bottom: 40px;
+  display: none;
+  justify-content: center;
+}
+
+.menu_footer {
+  display: flex;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
 .footer_up {
   font-size: 20px;
   line-height: 47px;
@@ -293,15 +313,18 @@ button {
   color: #FFFFFF;
 }
 
+.text_in_footer {
+  width: 33.33%;
+}
+
 .footer_text {
-  font-size: 20px;
-  line-height: 47px;
   font-weight: 400;
   color: #FFFFFF;
 }
 
 li {
   list-style: none;
+  margin-bottom: 25px;
 }
 
 .copyright {
@@ -310,15 +333,130 @@ li {
   color: #FFFFFF;
 }
 
-.footer .col-3 {
+.col_footer {
   margin-bottom: 60px;
   width: calc(100% / 3);
+  display: flex;
 }
 
+@media only screen and (max-width: 1024px) {
 
+  .top-section {
+    display: none;
+  }
 
+  .footer_text {
+    text-decoration: underline;
+  }
 
+  .footer .container {
+    padding: 120px 16px;
+  }
+}
 
+@media only screen and (max-width: 768px) {
+
+  .top-section {
+    display: none;
+  }
+
+  .col-4 {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .icon {
+    margin-bottom: 20px;
+  }
+
+  .text_in_footer {
+    text-align: center;
+  }
+
+  .footer_text {
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .offers .container {
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+
+  .footer .container {
+    max-width: 360px;
+    padding: 40px 16px;
+  }
+
+  .container {
+    max-width: 360px;
+    padding: 40px 16px;
+  }
+
+  .top-section {
+    display: none;
+  }
+
+  .text-center {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .title-line {
+    display: none;
+  }
+
+  .col-4 {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .icon {
+    margin-bottom: 16px;
+  }
+
+  .icon-wrap {
+    height: 70px;
+    width: 70px;
+    margin-bottom: 0;
+  }
+
+  .offer-title {
+    font-size: 15px;
+  }
+
+  .text_in_footer {
+    width: auto;
+    margin: 0 16px;
+  }
+
+  .logo_footer {
+    display: flex;
+  }
+
+  li {
+    display: none;
+    margin: 0;
+  }
+
+  .menu_footer {
+    margin-bottom: 32px;
+    justify-content: center;
+  }
+
+  .text1 {
+    display: flex;
+    font-size: 15px;
+    text-decoration: underline;
+  }
+
+  .copyright {
+    font-size: 12px;
+    text-align: center;
+  }
+}
 
 
 
