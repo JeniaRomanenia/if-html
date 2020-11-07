@@ -8,8 +8,9 @@
 }
 
 .container {
-  max-width: 1232px;
+  max-width: 1264px;
   margin: 0 auto;
+  padding: 120px 16px;
 }
 
 .sprite {
@@ -20,23 +21,15 @@
 }
 
 .top-section {
-  height: 900px;
+  min-height: 100vh;
   background-color: #1D1E1F;
   background-image: url(../images/castelmezzano.png);
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: auto;
 }
-
-.top-section .container {
-  padding-top: 51px;
-  height: 900px;
-}
-
 
 .nav {
-  height: 46px;
-  width: 1234px;
+
   display: flex;
   justify-content: space-between;
 }
@@ -48,40 +41,25 @@
 }
 
 .menu {
+  align-items: center;
   display: flex;
-  width: 343px;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  fill: #fff;
+  font-size: 24px;
 }
 
-.menu-1 {
-  display: flex;
-  width: 201px;
-  justify-content: space-between;
-}
-
-.menu-2 {
-  display: flex;
-  justify-content: space-between;
-  width: 94px;
-}
-
-.navimg {
-  justify-content: center;
-}
-
-.stays {
-  padding: 6px 0 12px;
-}
-
-.attractions {
-  padding: 6px 0 12px;
+.link-in-menu {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 24px;
+  position: relative;
 }
 
 .icon-night {
   fill: #FFFFFF;
   height: 30px;
   width: 30px;
+  margin: 0 24px;
 }
 
 .icon-account {
@@ -91,19 +69,12 @@
 }
 
 a {
-  display: inline-flex;
-  align-items: center;
-  flex-direction: column;
   text-decoration: none;
+  color: #FFFFFF;
 }
 
 a span {
   display: inline-block;
-  font-size: 24px;
-  margin-bottom: 12px;
-  line-height: 28px;
-  font-weight: 400;
-  color: #FFFFFF;
 }
 
 a hr {
@@ -112,6 +83,8 @@ a hr {
   height: 4px;
   background-color: #F5BD41;
   border: none;
+  position: absolute;
+  top: 38px;
 }
 
 a.active hr {
@@ -126,10 +99,7 @@ h2 {
 }
 
 .page {
-  height: 487px;
-  display: flex;
   margin-top: 198px;
-  flex-direction: column;
 }
 
 .page-title {
@@ -137,53 +107,41 @@ h2 {
   line-height: 59px;
   color: #FFFFFF;
   margin: 0;
-}
-
-.header_subtitle {
-  display: flex;
-  font-size: 18px;
-  line-height: 21px;
-  color: #FFFFFF;
-}
-
-.header_subtitle_hotel {
-  margin: 103px 221px 25px 25px;;
-}
-
-.header_subtitle_check {
-  margin-bottom: 25px;
-  margin-top: 102px;
+  margin-bottom: 100px;
 }
 
 form {
-  display: flex;
-  flex-wrap: nowrap;
   background: transparent;
   border: none;
 }
 
-.form {
-  width: 1232px;
-  height: 64px;
-  background: #FFFFFF;
+.inputs {
+  display: inline-flex;
+  background-color: #FFFFFF;
   border-radius: 8px;
-  border: #f3f3f4;
-  border-style: solid;
-  border: 3px;
-  display: flex;
-  flex-direction: row-reverse;
+  border-left: 3px solid #F3F3F4;
+}
+
+.labels {
+  margin-bottom: 24px;
+  padding-left: 24px;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+label {
+  margin-right: 220px;
 }
 
 .input_city {
-  width: 463px;
-  height: 64px;
+  width: 465px;
   padding-left: 24px;
   border: none;
   background: transparent;
 }
 
 .input_data {
-  width: 258px;
+  width: 260px;
   border-radius: 8px;
   border-color: #F5BD41;
   border-width: 3px;
@@ -193,7 +151,7 @@ form {
 }
 
 .input_room {
-  width: 314px;
+  width: 310px;
   text-align: center;
   border: none;
   background: transparent;
@@ -206,7 +164,7 @@ input, textarea {
 }
 
 button {
-  width: 192px;
+  width: 190px;
   background: #3077C6;
   color: #FFFFFF;
   font-size: 24px;
@@ -216,7 +174,7 @@ button {
   border-width: 3px;
   border-color: #3077C6;
   border-style: solid;
-
+  padding: 16px 57px;
 }
 
 .apps {
