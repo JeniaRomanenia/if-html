@@ -156,17 +156,14 @@
         </a>
       </div>
       <div class="menu">
-        <div class="menu-1">
-          <a href="#" class="active stays">
+          <a href="#" class="active link-in-menu">
             <span>Stays</span>
             <hr>
           </a>
-          <a href="#" class="attractions">
+          <a href="#" class="link-in-menu">
             <span>Attractions</span>
             <hr>
           </a>
-        </div>
-        <div class="menu-2">
           <a href="#" class="navimg">
         <span>
           <svg class="icon-night">
@@ -181,26 +178,26 @@
         </svg>
       </span>
           </a>
-        </div>
       </div>
     </div>
     <div class="page">
       <h2 class="page-title">Discover stays
         <br>to live, work or just relax</h2>
-      <div class="header_subtitle">
-        <div class="header_subtitle_hotel">
+      <form action="/" method="get">
+      <div class="labels">
+        <label for="city">
           Your destination or hotel name
-        </div>
-        <div class="header_subtitle_check">
+        </label>
+        <label for="data">
           Check-in — Check-out
-        </div>
+      </label>
       </div>
-      <div class="form">
-        <form action="/" method="get">
+      <div class="inputs">
           <input id="city" class="input_city" type="text" placeholder="New York">
           <input id="data" class="input_data" type="text" placeholder="Tue 15 Sept — Sat 19 Sept">
           <input id="room" class="input_room" type="text" placeholder="2 Adults — 0 Children — 1 Room">
           <button type="submit">Search</button>
+      </div>
         </form>
       </div>
       <div class="apps">
@@ -224,7 +221,7 @@
     <hr class="title-line">
     <div class="row">
       <div class="col-4 text-center">
-        <div>
+        <div class="icon">
           <svg class="icon-wrap">
             <use href="#headset"></use>
           </svg>
@@ -232,7 +229,7 @@
         <span class="offer-title">Support 24/7</span>
       </div>
       <div class="col-4 text-center">
-        <div>
+        <div class="icon">
           <svg class="icon-wrap">
             <use href="#forum"></use>
           </svg>
@@ -240,7 +237,7 @@
         <span class="offer-title">Communicate directly</span>
       </div>
       <div class="col-4 text-center">
-        <div>
+        <div class="icon">
           <svg class="icon-wrap">
             <use href="#comp"></use>
           </svg>
@@ -248,7 +245,7 @@
         <span class="offer-title">Book online</span>
       </div>
       <div class="col-4 text-center">
-        <div>
+        <div class="icon">
           <svg class="icon-wrap">
             <use href="#like"></use>
           </svg>
@@ -260,11 +257,15 @@
 </div>
 <div class="footer">
   <div class="container">
-    <div class="row">
-      <div class="col-3">
-        <ul>
-          <li>
-            <a href="#" class="footer_up">About</a>
+    <div class="logo_footer">
+      <svg class="logo_in_footer">
+        <use href="#logo"></use>
+      </svg>
+    </div>
+    <div class="menu_footer">
+        <ul class="text_in_footer">
+          <li class="text1">
+            <a href="#" class="footer_text">About</a>
           </li>
           <li>
             <a href="#" class="footer_text">How Triphouse works</a>
@@ -278,11 +279,9 @@
           <li><a href="#" class="footer_text">Terms</a>
           </li>
         </ul>
-      </div>
-      <div class="col-3">
-        <ul>
-          <li>
-            <a href="#" class="footer_up">Property types</a>
+        <ul class="text_in_footer">
+          <li class="text1">
+            <a href="#" class="footer_text">Property types</a>
           </li>
           <li>
             <a href="#" class="footer_text">Guest houses</a>
@@ -303,11 +302,9 @@
             <a href="#" class="footer_text">Hostels</a>
           </li>
         </ul>
-      </div>
-      <div class="col-3">
-        <ul>
-          <li>
-            <a class="footer_up">Support</a>
+        <ul class="text_in_footer">
+          <li class="text1">
+            <a class="footer_text">Support</a>
           </li>
           <li>
             <a href="#" class="footer_text">Contact Customer Service</a>
@@ -316,7 +313,6 @@
             <a href="#" class="footer_text">FAQ</a>
           </li>
         </ul>
-      </div>
     </div>
     <div class="copyright">&copy; 2020 Triphouse, Inc. All rights reserved</div>
   </div>
