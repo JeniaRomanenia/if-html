@@ -117,6 +117,23 @@
   position: relative;
 }
 
+.link-in-menu:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--secondary);
+  height: 4px;
+  width: 50px;
+  margin: 0 auto -12px;
+  display: none;
+}
+
+.link-in-menu:hover:after {
+  display: block;
+}
+
 .icon-night {
   fill: var(--white-color);
   height: 30px;
@@ -136,20 +153,6 @@ a {
 }
 
 a span {
-  display: inline-block;
-}
-
-a hr {
-  display: none;
-  width: 50px;
-  height: 4px;
-  background-color: var(--secondary);
-  border: none;
-  position: absolute;
-  top: 38px;
-}
-
-a.active hr {
   display: inline-block;
 }
 
