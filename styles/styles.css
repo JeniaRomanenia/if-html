@@ -91,6 +91,10 @@
   background-position: center top;
 }
 
+.top-section .container {
+  padding-top: 50px;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -156,13 +160,6 @@ a span {
   display: inline-block;
 }
 
-h2 {
-  margin-bottom: 20px;
-  font-size: 40px;
-  line-height: 47px;
-  font-weight: 500;
-}
-
 .page {
   margin-top: 198px;
 }
@@ -171,7 +168,6 @@ h2 {
   font-size: 50px;
   line-height: 59px;
   color: var(--white-color);
-  margin: 0;
   margin-bottom: 100px;
 }
 
@@ -228,7 +224,7 @@ input, textarea {
   color: var(--primary-text-color);
 }
 
-button {
+.button-form {
   width: 190px;
   background: var(--primary-color);
   color: #FFFFFF;
@@ -263,10 +259,21 @@ button {
 
 .text-center {
   text-align: center;
+  margin-bottom: 100px;
+  font-weight: 500;
+  font-size: 40px;
+  position: relative;
 }
 
-.offers .container {
-  padding: 118px 0;
+.text-center.active:after {
+  content: '';
+  display: inline-block;
+  width: 100px;
+  height: 4px;
+  background-color: var(--secondary);
+  position: absolute;
+  bottom: -25px;
+  left: calc(50% - 100px / 2);
 }
 
 .offer-title {
@@ -275,18 +282,11 @@ button {
   font-weight: 400;
 }
 
-.title-line {
-  border: none;
-  width: 100px;
-  height: 4px;
-  background-color: var(--secondary);
-  margin: 0 auto 80px;
-}
-
-.row {
-  display: flex;
+.row-offers {
   text-align: center;
+  display: flex;
   flex-wrap: wrap;
+  margin: 0 -8px;
 }
 
 .offer {
@@ -303,8 +303,136 @@ button {
   fill: var(--primary-color);
 }
 
-.footer .container {
-  padding: 110px 0;
+.h2-text {
+  margin-bottom: 109px;
+  font-size: 40px;
+  line-height: 47px;
+  font-weight: 500;
+}
+
+.homes {
+  background-color: var(--bg-color);
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+  position: relative;
+  font-size: 24px;
+}
+
+.homes-img {
+  width: 100%;
+  height: 69%;
+  margin-bottom: 16px;
+}
+
+.homes-link {
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.homes-text {
+  font-size: 24px;
+  color: var(--secondary-text-color);
+  padding-top: 24px;
+}
+
+.home  {
+  flex-grow: 0;
+  padding: 0 8px;
+  fill: var(--primary-color);
+}
+
+.destinations-tabs {
+  align-items: center;
+  background-color: var(--stroke-color);
+  width: 50%;
+  height: 65px;
+  margin-bottom: 65px;
+  border-radius: 8px;
+  display: flex;
+}
+
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+[class*='destinations-button-'] {
+  background-color: var(--stroke-color);
+  color: var(--primary-text-color);
+  height: 64px;
+  border: none;
+  border-radius: 8px;
+  font-size: 24px;
+}
+
+.button:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.destinations-button-regions {
+  width: 192px;
+}
+
+.destinations-button-cities {
+  width: 192px;
+}
+
+.destinations-button-places {
+  width: 238px;
+}
+
+
+
+.destinations-img {
+  height: 70%;
+  width: 100%;
+  z-index: -1;
+  display: flex;
+  position: relative;
+}
+
+.destinations-booknow {
+  width: 128px;
+  height: 48px;
+  display: none;
+  background-color: var(--white-color);
+  position: absolute;
+  top: 125px; left: 84px;
+  font-size: 18px;
+  line-height: 44px;
+  text-align: center;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+}
+
+.destinations-booknow-link {
+  color: var(--primary-color);
+  margin: 0 auto;
+}
+
+.destinations-filter:hover {
+  background-color: rgba(56, 56, 56, 0.4);
+  z-index: 0;
+}
+
+.destinations-filter:hover .destinations-booknow {
+  display: flex;
+}
+
+.positions-booknow {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.places {
+  padding: 0 8px;
+  fill: var(--primary-color)
 }
 
 .footer {
@@ -470,6 +598,24 @@ li {
 
   .offer-title {
     font-size: 15px;
+  }
+
+  .homes-img-xs {
+    display: none;
+  }
+
+  .row {
+    font-size: 12px;
+  }
+
+  .homes-img {
+    height: 79%;
+    margin-bottom: 6px;
+    display: flex;
+  }
+
+  .homes-text {
+    padding-top: 4px;
   }
 
   .text_in_footer {
