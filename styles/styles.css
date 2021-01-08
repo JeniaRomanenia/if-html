@@ -308,11 +308,12 @@ input, textarea {
   font-size: 40px;
   line-height: 47px;
   font-weight: 500;
+  color: var(--primary-text-color);
 }
 
 .homes {
   background-color: var(--bg-color);
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .row {
@@ -387,8 +388,6 @@ input, textarea {
   width: 238px;
 }
 
-
-
 .destinations-img {
   height: 70%;
   width: 100%;
@@ -434,6 +433,168 @@ input, textarea {
   padding: 0 8px;
   fill: var(--primary-color)
 }
+
+.sign {
+  width: 1232px;
+  height: 200px;
+  background-color: var(--bg-color);
+  display: flex;
+}
+
+.text-sign-mobi{
+  display: none;
+}
+
+.sign-user-svg {
+  width: 86px;
+  height: 86px;
+  fill: var(--primary-color);
+  margin: 57px 24px;
+}
+
+.text-sign {
+  font-weight: 500;
+  font-size: 24px;
+  margin: 51px 0 21px;
+}
+
+.sign-botton {
+  width: 128px;
+  height: 48px;
+  background-color: var(--white-color);
+  font-size: 18px;
+  line-height: 44px;
+  text-align: center;
+  border: 1px solid #3077C6;
+  border-radius: 8px;
+}
+
+.sign-close {
+  width: 26px;
+  height: 26px;
+  fill: var(--secondary-text-color);
+}
+/*--*/
+
+[class*='col'] {
+  flex-grow: 1;
+  padding: 0 8px;
+  fill: var(--primary-color);
+}
+
+.reviews-imgs {
+  position: relative;
+}
+
+.guests-img {
+  width: 100%;
+}
+
+.reviews-background {
+  background-color: var(--bg-color);
+  height: 760px;
+}
+
+.price {
+  background-color: var(--primary-text-color);
+  opacity: 0.7;
+  bottom: 1.5%;
+  width: 100%;
+  height: 48px;
+  position: absolute;
+}
+
+.price-text {
+  font-weight: normal;
+  font-size: 18px;
+  color: var(--white-color);
+  padding: 18px 24px 11px;
+}
+
+.places-all {
+  display: flex;
+  justify-content: space-between;
+}
+
+.places-hotel {
+  font-weight: 500;
+  margin: 24px 24px 16px;
+}
+
+.place {
+  color: var(--primary-color);
+  font-size: 18px;
+}
+
+.places-country {
+  margin-left: 24px;
+}
+
+.guests-rating-reviews {
+  text-align: -webkit-right;
+  padding-right: 24px;
+}
+
+.guests-rating {
+  background-color: var(--primary-dark-color);
+  color: var(--white-color);
+  width: 48px;
+  height: 32px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 24px 0 8px;
+  font-size: 18px;
+  padding-top: 5px;
+}
+
+.guests-reviews {
+  font-size: 14px;
+  color: var(--secondary-text-color);
+}
+
+.comment {
+  margin-left: 24px;
+  margin-top: 29px;
+  display: flex;
+  font-size: 18px;
+}
+
+.guests-account {
+  fill: var(--secondary-text-color);
+  width: 53px;
+  height: 53px;
+  margin-left: 3px;
+}
+
+.guests-name-country {
+  margin-left: 21px;
+}
+
+.guests-name {
+  margin-bottom: 8px;
+  color: var(--primary-text-color);
+}
+
+.guests-сountry {
+  display: inline-flex;
+}
+
+.guests-place {
+  color: var(--secondary-text-color);
+  margin-left: 5px;
+}
+
+.comment-text {
+  font-size: 18px;
+  margin: 24px;
+  color: var(--primary-text-color);
+}
+
+.reviews {
+  font-size: 14px;
+  color: var(--secondary-text-color);
+}
+
 
 .footer {
   background-color: var(--primary-dark-color);
